@@ -27,6 +27,14 @@ type Product_variables struct {
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
+	Supports_hw_fde struct {
+		Cflags []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Supports_hw_fde_perf struct {
+		Cflags []string
+	}
 	Target_process_sdk_version_override struct {
 		Cppflags []string
 	}
@@ -82,6 +90,8 @@ type ProductVariables struct {
 	Supports_extended_compress_format  *bool `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
+	Supports_hw_fde  *bool `json:",omitempty"`
+	Supports_hw_fde_perf  *bool `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
 	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 	Target_ignores_ftp_pptp_conntrack_failure  *bool `json:",omitempty"`
