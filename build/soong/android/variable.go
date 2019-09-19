@@ -21,6 +21,9 @@ type Product_variables struct {
 		Cflags []string
 		Header_libs []string
 	}
+	Supports_extended_compress_format struct {
+		Cflags []string
+	}
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
@@ -76,6 +79,7 @@ type ProductVariables struct {
 	Qcom_um_soong_namespace  *string `json:",omitempty"`
 	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
+	Supports_extended_compress_format  *bool `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
