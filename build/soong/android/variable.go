@@ -14,6 +14,9 @@ type Product_variables struct {
 	Needs_text_relocations struct {
 		Cppflags []string
         }
+	Should_wait_for_qsee struct {
+		Cflags []string
+	}
         Qcom_um_soong_namespace struct {
 		Cflags []string
 		Header_libs []string
@@ -71,6 +74,7 @@ type ProductVariables struct {
 	Java_Source_Overlays *string `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Qcom_um_soong_namespace  *string `json:",omitempty"`
+	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
